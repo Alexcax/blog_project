@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog</title>
+</head>
+<body>
+    <header>
+        <h1>Meu Blog</h1>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Artigos</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+    
+    <main>
+        <article>
+            <h2>Minha experiência aprendendo HTML</h2>
+
+            <p>
+                Estou aprendendo HTML e conhecendo as principais
+                estruturas utilizadas para criar páginas na web.
+            </p>
+            <img src="html.jpg" alt="Código HTML exibido em uma tela">
+        </article>
+
+        <article>
+            <h2>A importância da tecnologia</h2>
+
+            <p>
+                A tecnologia está presente em diversas áreas do nosso
+                cotidiano e o desenvolvimento web é uma delas.
+            </p>
+
+            <img src="codigolaptop.jpg" alt="Computador utilizado para programação">
+        </article>
+    </main>
+    
+    <aside>
+        <form method="get">
+            <fieldset>
+                <legend>Inscreva-se no blog</legend>
+
+                <label for="nome">Nome:</label>
+                <input
+                type="text"
+                id="nome"
+                name="nome"
+                minlength="3"
+                required>
+
+                <label for="email">E-mail:</label>
+                <input
+                type="email"
+                id="email"
+                name="email"
+                required>
+
+                <label for="idade">Idade:</label>
+                <input
+                type="number"
+                id="idade"
+                name="idade"
+                min="18"
+                max="120"
+                required>
+
+                <label for="assunto">Assunto de interesse:</label>
+                <select id="assunto" name="assunto">
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">JavaScript</option>
+                </select>
+
+                <label for="termos">
+                    <input 
+                    type="checkbox" 
+                    id="termos" 
+                    name="termos" 
+                    required>
+                    Concordo com os termos e condições
+                </label>
+
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+    </aside>
+
+    <footer>
+        <p>&copy; 2026 Meu Blog. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
